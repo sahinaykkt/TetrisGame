@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+#start-button {
+    width: 200px;
+    background: black;
+    color: #fff;
+    height: 60px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+#tetris-grid {
+    width: 300px;
+    height: 600px;
+    margin: 100px auto;
+    background: #d6efc7;
+}
+
+.tetris-grid-item {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tetris-grid-item.filled {
+    background: #184d47;
+}
+
+.taken {
+    border:none;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#score {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 32px;
+}
+
+#user {
+    text-align: center;
+    font-size: 24px;
+}
+
+#highest-scores {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 200px;
+    padding:10px;
+    height: 200px;
+    background: gray;
+}

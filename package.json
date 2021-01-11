@@ -1,0 +1,37 @@
+{
+  "name": "tetris-game",
+  "version": "1.0.0",
+  "description": "A tetris game with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/76-Istanbul-Front-End-Bootcamp/tetris-game.git"
+  },
+  "keywords": [
+    "javascript",
+    "tetris"
+  ],
+  "author": "Kodluyoruz Frontend Bootcamp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/76-Istanbul-Front-End-Bootcamp/tetris-game/issues"
+  },
+  "homepage": "https://github.com/76-Istanbul-Front-End-Bootcamp/tetris-game#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.12.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "alertify": "^0.3.0"
+  }
+}
