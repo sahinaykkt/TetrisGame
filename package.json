@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/76-Istanbul-Front-End-Bootcamp/tetris-game.git"
+    "url": "git+https://github.com/sahinaykkt/TetrisGame.git"
   },
   "keywords": [
     "javascript",
     "tetris"
   ],
-  "author": "Kodluyoruz Frontend Bootcamp",
+  "author": "Kodluyoruz Frontend Bootcamp(sahinaykkt)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/76-Istanbul-Front-End-Bootcamp/tetris-game/issues"
+    "url": "https://github.com/sahinaykkt/TetrisGame/issues"
   },
-  "homepage": "https://github.com/76-Istanbul-Front-End-Bootcamp/tetris-game#readme",
+  "homepage": "https://github.com/sahinaykkt/TetrisGame/blob/master/README.md",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

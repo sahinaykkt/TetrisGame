@@ -4,7 +4,7 @@ import {GRID_SIZE, GRID_WIDTH} from "../constants/grid";
 
 export const getRandomTetrominoe = () =>{
     const randomNum = Math.floor(Math.random()* tetrominoes.length);
-    return tetrominoes[4];
+    return tetrominoes[randomNum];
 };
 
 export const unDraw = () => {

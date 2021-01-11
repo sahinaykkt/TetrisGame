@@ -18,7 +18,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var gridItems = _functions_grid__WEBPACK_IMPORTED_MODULE_3__.elements;
-(0,_currentValues__WEBPACK_IMPORTED_MODULE_4__.setValue)("elements", gridItems);
+(0,_currentValues__WEBPACK_IMPORTED_MODULE_4__.setValue)("elements", gridItems); //const username = prompt("Your name ?");
+//setValue("user", username);
+//document.querySelector("#user").innerHTML = `Welcome, ${username}`;
+
+if (window.localStorage.getItem("highestScore")) {
+  document.querySelector("#highest-score").innerHTML = window.localStorage.getItem("highestScore");
+} else {
+  document.querySelector("#highest-score").innerHTML = 0;
+}
+
 document.querySelector("#start-button").addEventListener("click", function () {
   var startTetrisInterval = function startTetrisInterval() {
     (0,_functions_tetrimones__WEBPACK_IMPORTED_MODULE_5__.start)();
@@ -342,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    font: inherit;\n    vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n    display: block;\n}\nbody {\n    line-height: 1;\n}\nol, ul {\n    list-style: none;\n}\nblockquote, q {\n    quotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n    content: '';\n    content: none;\n}\ntable {\n    border-collapse: collapse;\n    border-spacing: 0;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\r\n\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    font-size: 100%;\r\n    font: inherit;\r\n    vertical-align: baseline;\r\n}\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n    display: block;\r\n}\r\nbody {\r\n    line-height: 1;\r\n}\r\nol, ul {\r\n    list-style: none;\r\n}\r\nblockquote, q {\r\n    quotes: none;\r\n}\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n    content: '';\r\n    content: none;\r\n}\r\ntable {\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -457,7 +466,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    box-sizing: border-box;\n}\n\n#start-button {\n    width: 200px;\n    background: black;\n    color: #fff;\n    height: 60px;\n    margin: 10px auto;\n    text-align: center;\n    font-size: 24px;\n    line-height: 48px;\n    cursor: pointer;\n}\n\n#tetris-grid {\n    width: 300px;\n    height: 600px;\n    margin: 100px auto;\n    background: #d6efc7;\n}\n\n.tetris-grid-item {\n    width: 30px;\n    height: 30px;\n    display: inline-block;\n    vertical-align: middle;\n    border: 1px solid rgba(0, 0, 0, 0.2);\n}\n\n.tetris-grid-item.filled {\n    background: #184d47;\n}\n\n.taken {\n    border:none;\n    width: 30px;\n    height: 30px;\n    display: inline-block;\n    vertical-align: middle;\n}\n\n#score {\n    width: 200px;\n    margin: 0 auto;\n    text-align: center;\n    font-size: 32px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n#start-button {\r\n    width: 200px;\r\n    background: black;\r\n    color: #fff;\r\n    height: 60px;\r\n    margin: 10px auto;\r\n    text-align: center;\r\n    font-size: 24px;\r\n    line-height: 48px;\r\n    cursor: pointer;\r\n}\r\n\r\n#tetris-grid {\r\n    width: 300px;\r\n    height: 600px;\r\n    margin: 100px auto;\r\n    background: #d6efc7;\r\n}\r\n\r\n.tetris-grid-item {\r\n    width: 30px;\r\n    height: 30px;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    border: 1px solid rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n.tetris-grid-item.filled {\r\n    background: #184d47;\r\n}\r\n\r\n.taken {\r\n    border:none;\r\n    width: 30px;\r\n    height: 30px;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}\r\n\r\n#score {\r\n    width: 200px;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    font-size: 32px;\r\n}\r\n\r\n#user {\r\n    text-align: center;\r\n    font-size: 24px;\r\n}\r\n\r\n#highest-scores {\r\n    position: absolute;\r\n    top: 15px;\r\n    left: 15px;\r\n    width: 200px;\r\n    padding:10px;\r\n    height: 200px;\r\n    background: gray;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -515,6 +524,7 @@ var createGrid = function createGrid() {
     var extraBlock = document.createElement("div");
     extraBlock.classList.add("tetris-grid-item");
     extraBlock.classList.add("taken");
+    extraBlock.classList.add("wall");
     $tetrisRootElement.appendChild(extraBlock);
   }
 
@@ -568,7 +578,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "moveRight": () => /* binding */ moveRight,
 /* harmony export */   "rotate": () => /* binding */ rotate,
 /* harmony export */   "bindEvents": () => /* binding */ bindEvents,
-/* harmony export */   "handleControls": () => /* binding */ handleControls
+/* harmony export */   "handleControls": () => /* binding */ handleControls,
+/* harmony export */   "checkHighestScore": () => /* binding */ checkHighestScore
 /* harmony export */ });
 /* harmony import */ var _constants_tetrominoes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
 /* harmony import */ var _currentValues__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
@@ -578,7 +589,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var getRandomTetrominoe = function getRandomTetrominoe() {
   var randomNum = Math.floor(Math.random() * _constants_tetrominoes__WEBPACK_IMPORTED_MODULE_0__.tetrominoes.length);
-  return _constants_tetrominoes__WEBPACK_IMPORTED_MODULE_0__.tetrominoes[4];
+  return _constants_tetrominoes__WEBPACK_IMPORTED_MODULE_0__.tetrominoes[randomNum];
 };
 var unDraw = function unDraw() {
   var _getCurrentValues = (0,_currentValues__WEBPACK_IMPORTED_MODULE_1__.getCurrentValues)(),
@@ -646,12 +657,16 @@ var checkScore = function checkScore() {
       score = _getCurrentValues5.score;
 
   for (var currentIndex = 0; currentIndex < _constants_grid__WEBPACK_IMPORTED_MODULE_2__.GRID_SIZE - 1; currentIndex += _constants_grid__WEBPACK_IMPORTED_MODULE_2__.GRID_WIDTH) {
-    var row = [currentIndex, currentIndex + 1, currentIndex + 2, currentIndex + 3, currentIndex + 4, currentIndex + 5, currentIndex + 6, currentIndex + 7, currentIndex + 8, currentIndex + 9];
-    console.log("Row", row);
+    var row = [currentIndex, currentIndex + 1, currentIndex + 2, currentIndex + 3, currentIndex + 4, currentIndex + 5, currentIndex + 6, currentIndex + 7, currentIndex + 8, currentIndex + 9]; // 0 - row - 0 , 1, ,2 ,3 ..
+    // 10 - row- 10, 11 , 12
+
+    var isWall = row.some(function (index) {
+      return elements[index].classList.contains("wall");
+    });
 
     if (row.every(function (index) {
       return elements[index].classList.contains("taken");
-    })) {
+    }) && !isWall) {
       console.log("Hepsi taken", row);
       var currentScore = score + 10;
       (0,_currentValues__WEBPACK_IMPORTED_MODULE_1__.setValue)("score", currentScore);
@@ -661,9 +676,7 @@ var checkScore = function checkScore() {
         elements[index].classList.remove("filled");
       });
       var removedElements = elements.splice(currentIndex, _constants_grid__WEBPACK_IMPORTED_MODULE_2__.GRID_WIDTH);
-      console.log(removedElements);
       var newEls = removedElements.concat(elements);
-      console.log(newEls);
       (0,_currentValues__WEBPACK_IMPORTED_MODULE_1__.setValue)("elements", newEls);
       newEls.forEach(function (cell) {
         return document.querySelector("#tetris-grid").appendChild(cell);
@@ -677,13 +690,15 @@ var checkIsGameOver = function checkIsGameOver() {
       rotation = _getCurrentValues6.rotation,
       tetrominoe = _getCurrentValues6.tetrominoe,
       elements = _getCurrentValues6.elements,
-      timer = _getCurrentValues6.timer;
+      timer = _getCurrentValues6.timer,
+      score = _getCurrentValues6.score;
 
   if (tetrominoe[rotation].some(function (index) {
     return elements[position + index].classList.contains("taken");
   })) {
     // GAME OVER
     clearInterval(timer);
+    checkHighestScore(score);
     document.getElementById("score").innerHTML = "GAME OVER!";
   }
 };
@@ -757,6 +772,20 @@ var handleControls = function handleControls(e) {
 
   if (e.keyCode === 40) {
     start();
+  }
+};
+var checkHighestScore = function checkHighestScore(currentScore) {
+  var highestScore = window.localStorage.getItem("highestScore");
+
+  if (highestScore) {
+    if (currentScore > highestScore) {
+      window.localStorage.setItem("highestScore", currentScore);
+    }
+
+    document.querySelector("#highest-score").innerHTML = window.localStorage.getItem("highestScore");
+  } else {
+    window.localStorage.setItem("highestScore", currentScore);
+    document.querySelector("#highest-score").innerHTML = currentScore;
   }
 };
 
