@@ -1,7 +1,5 @@
 # Tetris Game
 A tetris game made using JavaScript.
-# Screenshot
-![tetris](imgur.com/a/iHZMK3O)
 
 # How to Start
 
