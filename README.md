@@ -10,4 +10,4 @@ npm install
 npm run start
 ```
 
-Then you can play the game by going to [http://localhost:8080/]()
+Then you can play the game by going to [http://localhost:8080/](http://localhost:8080/)
